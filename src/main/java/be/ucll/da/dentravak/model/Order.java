@@ -13,11 +13,15 @@ public class Order {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID orderID;
+
     private String GSM;
     private UUID sandwichID;
     private Brood brood;
     private Date date;
 
+    public Order(){
+
+    }
 
     public String getGSM() {
         return GSM;

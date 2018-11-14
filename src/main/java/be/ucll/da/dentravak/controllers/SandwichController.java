@@ -20,7 +20,7 @@ public class SandwichController {
     }
 
 
-    @RequestMapping("/sandwiches")
+    @RequestMapping(value="/sandwiches", method = RequestMethod.GET)
     public Iterable<Sandwich> sandwich() {
         return swRepo.findAll();
     }

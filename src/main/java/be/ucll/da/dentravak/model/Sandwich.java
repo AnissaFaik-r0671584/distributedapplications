@@ -17,6 +17,9 @@ public class Sandwich {
     private BigDecimal price;
     private String ingredients;
 
+    public Sandwich(){
+
+    }
 
     public String getName() {
         return name;
