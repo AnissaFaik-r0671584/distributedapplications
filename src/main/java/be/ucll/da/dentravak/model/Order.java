@@ -1,22 +1,23 @@
 package be.ucll.da.dentravak.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 import java.util.UUID;
 
+@Entity
 public class Order {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private UUID orderID;
     private String GSM;
     private UUID sandwichID;
-    private UUID orderID;
     private Brood brood;
-    private Date Date;
+    private Date date;
 
-    public Order(String GSM, UUID sandwichID, UUID orderID, Brood brood, java.util.Date date) {
-        this.GSM = GSM;
-        this.sandwichID = sandwichID;
-        this.orderID = orderID;
-        this.brood = brood;
-        Date = date;
-    }
 
     public String getGSM() {
         return GSM;
@@ -51,10 +52,56 @@ public class Order {
     }
 
     public java.util.Date getDate() {
-        return Date;
+        return date;
     }
 
     public void setDate(java.util.Date date) {
-        Date = date;
+        date = date;
+    }
+
+    @Override
+    public String toString(){
+        return GSM + " " + orderID + " " + brood + " " + date;
+    }
+
+    private Order(OrderBuilder builder){
+        this.GSM = builder.GSM;
+        this.sandwichID = builder.sandwichID;
+        this.brood = builder.brood;
+        this.date = builder.date;
+
+    }
+
+
+    public static class OrderBuilder {
+        private String GSM;
+        private UUID sandwichID;
+        private Brood brood;
+        private Date date;
+
+        public OrderBuilder() {
+        }
+
+        public OrderBuilder buildGSM(String name){
+            this.GSM = GSM;
+            return this;
+        }
+        public OrderBuilder buildSandwichID(UUID sandwichID){
+            this.sandwichID = sandwichID;
+            return this;
+        }
+        public OrderBuilder buildBrood(Brood brood){
+            this.brood = brood;
+            return this;
+        }
+
+        public OrderBuilder buildDate(Date brood){
+            this.date = date;
+            return this;
+        }
+
+        public Order build(){
+            return new Order(this);
+        }
     }
 }

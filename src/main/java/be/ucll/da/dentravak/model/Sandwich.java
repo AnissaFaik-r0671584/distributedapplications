@@ -52,13 +52,13 @@ public class Sandwich {
 
     @Override
     public String toString(){
-        return "" + name + " " + price + " " + ingredients;
+        return name + " " + price + " " + ingredients;
     }
 
     private Sandwich(SandwichBuilder builder){
-        this.name=builder.name;
-        this.price=builder.price;
-        this.ingredients=builder.ingredients;
+        this.name = builder.name;
+        this.price = builder.price;
+        this.ingredients = builder.ingredients;
 
     }
 
@@ -67,10 +67,7 @@ public class Sandwich {
         private BigDecimal price;
         private String ingredients;
 
-        public SandwichBuilder(String name, BigDecimal price, String ingredients) {
-            this.name = name;
-            this.price = price;
-            this.ingredients = ingredients;
+        public SandwichBuilder() {
         }
 
         public SandwichBuilder buildName(String name){
