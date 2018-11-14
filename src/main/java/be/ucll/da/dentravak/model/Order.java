@@ -1,23 +1,20 @@
 package be.ucll.da.dentravak.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Date;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
+@Table(name = "sandwich_orders")
 public class Order {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID orderID;
-
     private String GSM;
     private UUID sandwichID;
     private Brood brood;
-    private Date date;
+    private LocalDateTime date;
 
     public Order(){
 
@@ -55,12 +52,12 @@ public class Order {
         this.brood = brood;
     }
 
-    public java.util.Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(java.util.Date date) {
-        date = date;
+    public void setDate(LocalDateTime date) {
+        this.date = date;
     }
 
     @Override
@@ -81,12 +78,12 @@ public class Order {
         private String GSM;
         private UUID sandwichID;
         private Brood brood;
-        private Date date;
+        private LocalDateTime date;
 
         public OrderBuilder() {
         }
 
-        public OrderBuilder buildGSM(String name){
+        public OrderBuilder buildGSM(String GSM){
             this.GSM = GSM;
             return this;
         }
@@ -99,7 +96,7 @@ public class Order {
             return this;
         }
 
-        public OrderBuilder buildDate(Date brood){
+        public OrderBuilder buildDate(LocalDateTime date){
             this.date = date;
             return this;
         }

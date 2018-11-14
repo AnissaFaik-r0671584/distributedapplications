@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @SpringBootApplication
 public class Application {
@@ -49,7 +49,7 @@ public class Application {
 
             Order o = new Order.OrderBuilder()
                     .buildGSM("0480000000")
-                    .buildDate(new Date(2018, 1, 1))
+                    .buildDate(LocalDateTime.of(2018, 3, 3, 3, 3, 3))
                     .buildBrood(Brood.Wrap)
                     .buildSandwichID(s1.getID())
                     .build();

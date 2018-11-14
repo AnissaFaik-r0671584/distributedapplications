@@ -30,7 +30,7 @@ public class SandwichController {
         return swRepo.save(sandwich);
     }
 
-    @RequestMapping(value="/sandwich/{UUID}", method = RequestMethod.GET)
+    @RequestMapping(value="/sandwich/{id}", method = RequestMethod.GET)
     public Sandwich getSandwich(@PathVariable UUID id) {
         return swRepo.findById(id).get();
     }
