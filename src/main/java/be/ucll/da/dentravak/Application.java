@@ -30,17 +30,17 @@ public class Application {
         return (args) -> {
             Sandwich s1 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1")
+                    .buildName("1").buildIngredients("ingredient")
                     .build();
 
             Sandwich s2 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1")
+                    .buildName("1").buildIngredients("ingredient")
                     .build();
 
             Sandwich s3 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1")
+                    .buildName("1").buildIngredients("ingredient")
                     .build();
 
             repository.save(s1);
