@@ -19,11 +19,14 @@ public class SandwichController {
 
     @RequestMapping("/sandwiches")
     public List<Sandwich> sandwich() {
-        Sandwich sandwich = new Sandwich();
-        sandwich.setName("Smoske");
-        sandwich.setID(UUID.randomUUID());
-        sandwich.setIngredients("Sla, Komkommer, ...");
-        sandwich.setPrice(new BigDecimal(12.12));
-        return Arrays.asList(sandwich);
+        Sandwich sandwich = new Sandwich("Smoske", new BigDecimal(12.12),
+                 "Sla, Komkommer, ...", UUID.randomUUID());
+        Sandwich sandwich2 = new Sandwich("Smoske", new BigDecimal(12.12),
+                "Sla, Komkommer, ...", UUID.randomUUID());
+        Sandwich sandwich3 = new Sandwich("Smoske", new BigDecimal(12.12),
+                "Sla, Komkommer, ...", UUID.randomUUID());
+        Sandwich sandwich4 = new Sandwich("Smoske", new BigDecimal(12.12),
+                "Sla, Komkommer, ...", UUID.randomUUID());
+        return Arrays.asList(sandwich, sandwich2, sandwich3, sandwich4);
     }
 }

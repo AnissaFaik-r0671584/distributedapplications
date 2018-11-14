@@ -10,6 +10,13 @@ public class Sandwich {
     private String ingredients;
     private UUID ID;
 
+    public Sandwich(String name, BigDecimal price, String ingredients, UUID ID) {
+        this.name = name;
+        this.price = price;
+        this.ingredients = ingredients;
+        this.ID = ID;
+    }
+
     public String getName() {
         return name;
     }
