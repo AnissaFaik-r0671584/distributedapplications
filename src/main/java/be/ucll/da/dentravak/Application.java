@@ -61,8 +61,17 @@ public class Application {
                     .buildSandwichID(s2.getID())
                     .build();
 
+            Order o3 = new Order.OrderBuilder()
+                    .buildGSM("0480004994")
+                    .buildDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
+                    .buildBrood(Brood.Turkish_bread)
+                    .buildSandwichID(s1.getID())
+                    .build();
+
             orderRepository.save(o);
             orderRepository.save(o2);
+            orderRepository.save(o3);
+
         };
     }
 }
