@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,10 @@ public class OrderController {
     private OrderRepository orderRepository;
 
     @RequestMapping(value = "/orders", method = RequestMethod.POST)
-    public Order addOrder (@RequestBody Order order){ return orderRepository.save(order);}
+    public Order addOrder (@RequestBody Order order){
+        order.setDate(LocalDateTime.now());
+        return orderRepository.save(order);
+    }
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)
     public List<Order> getOrderByDate (@RequestParam("date") String date){
