@@ -53,6 +53,7 @@ public class Application {
                     .buildBrood(Brood.WRAP)
                     .buildSandwichID(s1.getId())
                     .buildPrice(new BigDecimal(2.00))
+                    .buildName("testnaam")
                     .build();
 
             Order o2 = new Order.OrderBuilder()
@@ -61,6 +62,7 @@ public class Application {
                     .buildBrood(Brood.WRAP)
                     .buildSandwichID(s2.getId())
                     .buildPrice(new BigDecimal(2.00))
+                    .buildName("testnaam")
                     .build();
 
             Order o3 = new Order.OrderBuilder()
@@ -69,6 +71,7 @@ public class Application {
                     .buildBrood(Brood.TURKISH_BREAD)
                     .buildSandwichID(s1.getId())
                     .buildPrice(new BigDecimal(2.00))
+                    .buildName("testnaam")
                     .build();
 
             orderRepository.save(o);

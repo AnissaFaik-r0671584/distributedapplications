@@ -14,6 +14,9 @@ public class Order {
     private UUID id;
     private String mobilePhoneNumber;
     private UUID sandwichId;
+
+
+    private String name;
     private Brood breadType;
     private BigDecimal price;
     private LocalDateTime creationDate;
@@ -22,6 +25,13 @@ public class Order {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     public String getMobilePhoneNumber() { return mobilePhoneNumber; }
     public void setMobilePhoneNumber(String GSM) {
         this.mobilePhoneNumber = GSM;
@@ -53,7 +63,7 @@ public class Order {
 
     @Override
     public String toString(){
-        return mobilePhoneNumber + " " + id + " " + breadType + " " + creationDate;
+        return name + " " + price + " " + mobilePhoneNumber + " " + id + " " + breadType + " " + creationDate;
     }
 
     private Order(OrderBuilder builder){
@@ -62,6 +72,7 @@ public class Order {
         this.breadType = builder.brood;
         this.creationDate = builder.date;
         this.price = builder.price;
+        this.name = builder.name;
     }
 
 
@@ -71,12 +82,17 @@ public class Order {
         private Brood brood;
         private LocalDateTime date;
         private BigDecimal price;
+        private String name;
 
         public OrderBuilder() {
         }
 
         public OrderBuilder buildPrice(BigDecimal price){
             this.price = price;
+            return this;
+        }
+        public OrderBuilder buildName(String name){
+            this.name = name;
             return this;
         }
         public OrderBuilder buildGSM(String GSM){

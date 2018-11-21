@@ -23,12 +23,18 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)
-    public List<Order> getOrderByDate (@RequestParam("date") String date){
+    public List<Order> getOrderByDate (@RequestParam(value = "date", required = false) String date){
         List<Order> orders = new ArrayList<>();
 
-        for(Order o: orderRepository.findAll()){
-            if(o.getCreationDate().toLocalDate().equals(LocalDate.parse(date))){
+        if(date == null) {
+            for (Order o : orderRepository.findAll()) {
                 orders.add(o);
+            }
+        } else {
+            for (Order o : orderRepository.findAll()) {
+                if (o.getCreationDate().toLocalDate().equals(LocalDate.parse(date))) {
+                    orders.add(o);
+                }
             }
         }
         return orders;
