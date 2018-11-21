@@ -1,6 +1,7 @@
 package be.ucll.da.dentravak.model;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -10,67 +11,57 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private UUID orderID;
-    private String GSM;
-    private UUID sandwichID;
-    private Brood brood;
-    private LocalDateTime date;
+    private UUID id;
+    private String mobilePhoneNumber;
+    private UUID sandwichId;
+    private Brood breadType;
+    private BigDecimal price;
+    private LocalDateTime creationDate;
 
     public Order(){
 
     }
 
-    public String getGSM() {
-        return GSM;
+    public String getMobilePhoneNumber() { return mobilePhoneNumber; }
+    public void setMobilePhoneNumber(String GSM) {
+        this.mobilePhoneNumber = GSM;
     }
-
-    public void setGSM(String GSM) {
-        this.GSM = GSM;
+    public UUID getSandwichId() {
+        return sandwichId;
     }
-
-    public UUID getSandwichID() {
-        return sandwichID;
+    public void setSandwichId(UUID sandwichId) {
+        this.sandwichId = sandwichId;
     }
-
-    public void setSandwichID(UUID sandwichID) {
-        this.sandwichID = sandwichID;
+    public UUID getId() {
+        return id;
     }
-
-    public UUID getOrderID() {
-        return orderID;
+    public void setId(UUID id) {
+        this.id = id;
     }
-
-    public void setOrderID(UUID orderID) {
-        this.orderID = orderID;
+    public Brood getBreadType() {
+        return breadType;
     }
-
-    public Brood getBrood() {
-        return brood;
+    public void setBreadType(Brood breadType) {
+        this.breadType = breadType;
     }
-
-    public void setBrood(Brood brood) {
-        this.brood = brood;
+    public LocalDateTime getCreationDate() { return creationDate; }
+    public void setCreationDate(LocalDateTime creationDate) {
+        this.creationDate = creationDate;
     }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
+    public BigDecimal getPrice() {  return price; }
+    public void setPrice(BigDecimal price) { this.price = price; }
 
     @Override
     public String toString(){
-        return GSM + " " + orderID + " " + brood + " " + date;
+        return mobilePhoneNumber + " " + id + " " + breadType + " " + creationDate;
     }
 
     private Order(OrderBuilder builder){
-        this.GSM = builder.GSM;
-        this.sandwichID = builder.sandwichID;
-        this.brood = builder.brood;
-        this.date = builder.date;
-
+        this.mobilePhoneNumber = builder.GSM;
+        this.sandwichId = builder.sandwichID;
+        this.breadType = builder.brood;
+        this.creationDate = builder.date;
+        this.price = builder.price;
     }
 
 
@@ -79,10 +70,15 @@ public class Order {
         private UUID sandwichID;
         private Brood brood;
         private LocalDateTime date;
+        private BigDecimal price;
 
         public OrderBuilder() {
         }
 
+        public OrderBuilder buildPrice(BigDecimal price){
+            this.price = price;
+            return this;
+        }
         public OrderBuilder buildGSM(String GSM){
             this.GSM = GSM;
             return this;

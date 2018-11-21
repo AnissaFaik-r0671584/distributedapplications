@@ -50,22 +50,25 @@ public class Application {
             Order o = new Order.OrderBuilder()
                     .buildGSM("0480000000")
                     .buildDate(LocalDateTime.of(2018, 3, 3, 3, 3, 3))
-                    .buildBrood(Brood.Wrap)
-                    .buildSandwichID(s1.getID())
+                    .buildBrood(Brood.WRAP)
+                    .buildSandwichID(s1.getId())
+                    .buildPrice(new BigDecimal(2.00))
                     .build();
 
             Order o2 = new Order.OrderBuilder()
                     .buildGSM("0480000044")
                     .buildDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
-                    .buildBrood(Brood.Wrap)
-                    .buildSandwichID(s2.getID())
+                    .buildBrood(Brood.WRAP)
+                    .buildSandwichID(s2.getId())
+                    .buildPrice(new BigDecimal(2.00))
                     .build();
 
             Order o3 = new Order.OrderBuilder()
                     .buildGSM("0480004994")
                     .buildDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
-                    .buildBrood(Brood.Turkish_bread)
-                    .buildSandwichID(s1.getID())
+                    .buildBrood(Brood.TURKISH_BREAD)
+                    .buildSandwichID(s1.getId())
+                    .buildPrice(new BigDecimal(2.00))
                     .build();
 
             orderRepository.save(o);

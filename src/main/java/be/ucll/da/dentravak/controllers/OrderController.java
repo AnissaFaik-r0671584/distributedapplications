@@ -18,7 +18,7 @@ public class OrderController {
 
     @RequestMapping(value = "/orders", method = RequestMethod.POST)
     public Order addOrder (@RequestBody Order order){
-        order.setDate(LocalDateTime.now());
+        order.setCreationDate(LocalDateTime.now());
         return orderRepository.save(order);
     }
 
@@ -27,7 +27,7 @@ public class OrderController {
         List<Order> orders = new ArrayList<>();
 
         for(Order o: orderRepository.findAll()){
-            if(o.getDate().toLocalDate().equals(LocalDate.parse(date))){
+            if(o.getCreationDate().toLocalDate().equals(LocalDate.parse(date))){
                 orders.add(o);
             }
         }

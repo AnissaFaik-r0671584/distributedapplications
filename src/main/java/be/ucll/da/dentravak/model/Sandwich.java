@@ -12,7 +12,7 @@ public class Sandwich {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private UUID ID;
+    private UUID id;
     private String name;
     private BigDecimal price;
     private String ingredients;
@@ -45,12 +45,12 @@ public class Sandwich {
         this.ingredients = ingredients;
     }
 
-    public UUID getID() {
-        return ID;
+    public UUID getId() {
+        return id;
     }
 
-    public void setID(UUID ID) {
-        this.ID = ID;
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     @Override
