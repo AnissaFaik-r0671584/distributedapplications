@@ -14,8 +14,6 @@ public class Order {
     private UUID id;
     private String mobilePhoneNumber;
     private UUID sandwichId;
-
-
     private String name;
     private Brood breadType;
     private BigDecimal price;

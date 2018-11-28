@@ -12,6 +12,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -25,22 +28,30 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    @Configuration
+    public class WebConfig implements WebMvcConfigurer {
+
+        @Override
+        public void addCorsMappings(CorsRegistry registry) {
+            registry.addMapping("/**");
+        }
+    }
     @Bean
     public CommandLineRunner demo(SandwichRepository repository, OrderRepository orderRepository){
         return (args) -> {
             Sandwich s1 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1").buildIngredients("ingredient")
+                    .buildName("Sandwich Anissa").buildIngredients("Ham, Kaas")
                     .build();
 
             Sandwich s2 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1").buildIngredients("ingredient")
+                    .buildName("Sandwich Joran").buildIngredients("Broodje gezond")
                     .build();
 
             Sandwich s3 = new Sandwich.SandwichBuilder()
                     .buildPrice(new BigDecimal(22.40))
-                    .buildName("1").buildIngredients("ingredient")
+                    .buildName("Sandwich Lector").buildIngredients("you get the point")
                     .build();
 
             repository.save(s1);
