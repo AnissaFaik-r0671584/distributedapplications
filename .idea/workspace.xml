@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e06b7f-a77b-4f9a-a54c-5572bfbace4f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_javacrumbs_json_unit_json_unit_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_javacrumbs_json_unit_json_unit_assertj_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_javacrumbs_json_unit_json_unit_core_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_javacrumbs_json_unit_json_unit_json_path_2_0_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dentravak_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dentravak_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dentravak_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dentravak_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/lib/travak-abstract-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/travak-abstract-element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/lib/travak-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/shop/travak-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/lib/travak-sandwiches-checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/lib/travak-sandwiches-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/lib/travak-sandwiches-order-confirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-order-confirmation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/controllers/SandwichController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/controllers/SandwichController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/model/SandwichRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/AbstractControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/AbstractControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichOrderControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichOrderControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,14 +49,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerIntegrationTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-sandwiches-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="48" column="102" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="49" column="76" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="26" column="63" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -135,11 +126,11 @@
         <option value="$PROJECT_DIR$/Frontend/lib/admin/travak-order-list.js" />
         <option value="$PROJECT_DIR$/Frontend/lib/admin/travak-sandwiches-list.js" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" />
-        <option value="$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichOrderControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/AbstractControllerIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js" />
       </list>
     </option>
   </component>
@@ -173,37 +164,20 @@
             <path>
               <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
               <item name="distributedapplications" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
               <item name="distributedapplications" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
               <item name="distributedapplications" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapplications" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dentravak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapplications" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dentravak" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,7 +195,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543617417794" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543619193328" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -412,20 +386,11 @@
       <workItem from="1542833961827" duration="682000" />
       <workItem from="1543401498278" duration="11798000" />
       <workItem from="1543589845248" duration="181000" />
-      <workItem from="1543591049371" duration="14766000" />
+      <workItem from="1543591049371" duration="16516000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SandwichOrderControllerIntegrationTest - 2018.11.30 at 22h 53m 42s.xml">
-      <configuration name="SandwichOrderControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SandwichOrderControllerIntegrationTest - 2018.11.30 at 22h 54m 24s.xml">
-      <configuration name="SandwichOrderControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SandwichOrderControllerIntegrationTest - 2018.11.30 at 22h 57m 47s.xml">
-      <configuration name="SandwichOrderControllerIntegrationTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SandwichOrderControllerIntegrationTest - 2018.11.30 at 22h 58m 32s.xml">
       <configuration name="SandwichOrderControllerIntegrationTest" configurationId="JUnit" />
     </history-entry>
@@ -447,9 +412,18 @@
     <history-entry file="SandwichControllerIntegrationTest - 2018.11.30 at 23h 35m 50s.xml">
       <configuration name="SandwichControllerIntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SandwichControllerIntegrationTest - 2018.11.30 at 23h 36m 17s.xml">
+      <configuration name="SandwichControllerIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SandwichControllerIntegrationTest - 2018.11.30 at 23h 36m 43s.xml">
+      <configuration name="SandwichControllerIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SandwichControllerIntegrationTest - 2018.11.30 at 23h 37m 08s.xml">
+      <configuration name="SandwichControllerIntegrationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61924000" />
+    <option name="totallyTimeSpent" value="63674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,7 +438,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -474,7 +448,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.74910396" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51029253" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51029253" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -639,38 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-order-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-sandwiches-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -742,11 +688,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="48" column="102" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
+        <state relative-caret-position="595">
+          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-order-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-sandwiches-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="63" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/lib/admin/travak-edit-sandwich.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="49" column="76" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="76" />
         </state>
       </provider>
     </entry>
