@@ -35,6 +35,7 @@ public class SandwichController {
     }
 
     @RequestMapping(value="/sandwiches/{id}", method = RequestMethod.PUT)
+    @CrossOrigin(origins = "http://localhost:8081")
     public Sandwich putSandwich(@RequestBody Sandwich sandwich,@PathVariable UUID id ) {
         if(swRepo.findById(id).get() != null){
             return swRepo.save(sandwich);

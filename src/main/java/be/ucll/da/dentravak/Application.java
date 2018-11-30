@@ -40,17 +40,17 @@ public class Application {
     public CommandLineRunner demo(SandwichRepository repository, OrderRepository orderRepository){
         return (args) -> {
             Sandwich s1 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal(22.40))
+                    .buildPrice(new BigDecimal("77.40"))
                     .buildName("Sandwich Anissa").buildIngredients("Ham, Kaas")
                     .build();
 
             Sandwich s2 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal(22.40))
+                    .buildPrice(new BigDecimal("11.40"))
                     .buildName("Sandwich Joran").buildIngredients("Broodje gezond")
                     .build();
 
             Sandwich s3 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal(22.40))
+                    .buildPrice(new BigDecimal("552.40"))
                     .buildName("Sandwich Lector").buildIngredients("you get the point")
                     .build();
 

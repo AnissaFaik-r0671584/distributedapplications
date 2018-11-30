@@ -1,4 +1,4 @@
-import DenTravakAbstractElement from './travak-abstract-element.js';
+import DenTravakAbstractElement from '../travak-abstract-element.js';
 
 class DenTravakSandwichesCheckout extends DenTravakAbstractElement {
 
@@ -21,11 +21,11 @@ class DenTravakSandwichesCheckout extends DenTravakAbstractElement {
     orderSandwich() {
         //todo: call backend via fetch api
         let order = {};
-        order.name = "";
+        order.name = this.byId("mobile-phone-number").value + " - order";
         order.sandwichId = this.sandwich.id;
         order.mobilePhoneNumber = this.byId("mobile-phone-number").value;
         order.breadType = this.byCss("input[name='typeBrood']:checked").value;
-        order.price = 4.5;
+        order.price = this.sandwich.price;
         fetch('http://localhost:8080/orders', {
             method: "POST",
             headers : {
@@ -40,8 +40,6 @@ class DenTravakSandwichesCheckout extends DenTravakAbstractElement {
             }
         });
     }
-
-
 
     get template() {
         return `

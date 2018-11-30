@@ -55,7 +55,11 @@ public class SandwichOrderControllerIntegrationTest extends AbstractControllerIn
 
     @Test
     public void testGetSandwichOrders_WithOrdersSaved_ReturnsListWithOrders() throws JSONException {
-        throw new RuntimeException("Implement this test and then the production code");
+        Order sandwichOrder = aSandwichOrder().forSandwich(savedSandwich).withBreadType(Brood.BOTERHAMMEKES).withMobilePhoneNumber("0487/123456").build();
+        this.sandwichOrderRepository.save(sandwichOrder);
+        String actualSandwiches = httpGet("/orders");
+        String expectedSandwiches = "[{\"id\":\"${json-unit.ignore}\",\"sandwichId\":\"" + savedSandwich.getId() + "\",\"name\":\"Americain\",\"breadType\":\"BOTERHAMMEKES\",\"creationDate\":\"${json-unit.ignore}\",\"price\":3.5,\"mobilePhoneNumber\":\"0487/123456\"}]";
+        assertThatJson(actualSandwiches).isEqualTo(expectedSandwiches);
     }
 
 }

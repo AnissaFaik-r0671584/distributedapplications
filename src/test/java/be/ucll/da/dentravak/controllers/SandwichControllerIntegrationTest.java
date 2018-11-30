@@ -36,21 +36,33 @@ public class SandwichControllerIntegrationTest extends AbstractControllerIntegra
 
     @Test
     public void testPostSandwich() throws JSONException {
-        Sandwich sandwich = aSandwich().withName("Americain").withIngredients("Vlees").withPrice(4.0).build();
+        Sandwich sandwich = aSandwich().withName("Americain").withIngredients("Vlees").withPrice("4.0").build();
 
         String actualSandwichAsJson = httpPost("/sandwiches", sandwich);
-        String expectedSandwichAsJson = "{\"id\":\"${json-unit.ignore}\",\"name\":\"Americain\",\"ingredients\":\"Vlees\",\"price\":4}";
+        String expectedSandwichAsJson = "{\"id\":\"${json-unit.ignore}\",\"name\":\"Americain\",\"ingredients\":\"Vlees\",\"price\":4.0}";
 
         assertThatJson(actualSandwichAsJson).isEqualTo(expectedSandwichAsJson);
     }
 
     @Test
     public void testPutSandwich() throws JSONException {
-        throw new RuntimeException("Implement this test and then the production code");
+        Sandwich sandwich = aSandwich().withName("Americain").withIngredients("Vlees").withPrice("4.0").build();
+        sandwichRepository.save(sandwich).setName("testput");
+
+        String actualSandwichAsJson = httpPut("/sandwiches/"+sandwich.getId(), sandwich);
+        String expectedSandwichAsJson = "{\"id\":\"${json-unit.ignore}\",\"name\":\"testput\",\"ingredients\":\"Vlees\",\"price\":4.0}";
+
+        assertThatJson(actualSandwichAsJson).isEqualTo(expectedSandwichAsJson);
     }
 
     @Test
     public void testGetSandwiches_WithSavedSandwiches_ListWithSavedSandwich() throws JSONException {
-        throw new RuntimeException("Implement this test and then the production code");
+        Sandwich sandwich = aSandwich().withName("Americain").withIngredients("Vlees").withPrice("4.0").build();
+        sandwichRepository.save(sandwich);
+
+        String actualSandwichAsJson = httpGet("/sandwiches");
+        String expectedSandwichAsJson = "[{\"id\":\"${json-unit.ignore}\",\"name\":\"Americain\",\"ingredients\":\"Vlees\",\"price\":4.0}]";
+
+        assertThatJson(actualSandwichAsJson).isEqualTo(expectedSandwichAsJson);
     }
 }
