@@ -8,10 +8,14 @@ class DenTravakSandwichesList extends DenTravakAbstractElement {
 
     connectedCallback() {
         super.connectedCallback();
+        this.refreshSandwiches();
+        this.initEventListeners();
+    }
+
+    refreshSandwiches() {
         fetch('http://localhost:8080/sandwiches')
             .then(resp => resp.json())
             .then(json => this.updateSandwichesList(json));
-        this.initEventListeners();
     }
 
     initEventListeners() {
