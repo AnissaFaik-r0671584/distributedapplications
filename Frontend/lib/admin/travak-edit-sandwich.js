@@ -20,23 +20,39 @@ class DenTravakEditSandwich extends DenTravakAbstractElement {
     saveSandwich() {
         //todo: call backend via fetch api
         let sandwich = {};
-        sandwich.id = this.sandwich.id;
         sandwich.name = this.byId('name').value;
         sandwich.price = this.byId('price').value;
         sandwich.ingredients = this.byId('ingredients').value;
-        fetch('http://localhost:8080/sandwiches/' + this.sandwich.id, {
-            method: "PUT",
-            headers : {
-                "Content-Type": "application/json; charset=UTF-8"
-            },
-            body:JSON.stringify(sandwich)
-        }).then(response => {
-            if(response.ok) {
-                this.app().dispatchEvent(new CustomEvent('save-succeeded', {detail: this.sandwich}));
-            } else {
-                alert('An error occurred')
-            }
-        });
+        if(this.sandwich.id != null) {
+            sandwich.id = this.sandwich.id;
+            fetch('http://localhost:8080/sandwiches/' + this.sandwich.id, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json; charset=UTF-8"
+                },
+                body: JSON.stringify(sandwich)
+            }).then(response => {
+                if (response.ok) {
+                    this.app().dispatchEvent(new CustomEvent('save-succeeded', {detail: this.sandwich}));
+                } else {
+                    alert('An error occurred')
+                }
+            });
+        }else{
+            fetch('http://localhost:8080/sandwiches', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json; charset=UTF-8"
+                },
+                body: JSON.stringify(sandwich)
+            }).then(response => {
+                if (response.ok) {
+                    this.app().dispatchEvent(new CustomEvent('save-succeeded', {detail: this.sandwich}));
+                } else {
+                    alert('An error occurred')
+                }
+            });
+        }
     }
 
     init(sandwich) {
