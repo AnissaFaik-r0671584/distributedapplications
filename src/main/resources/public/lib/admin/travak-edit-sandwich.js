@@ -39,7 +39,7 @@ class DenTravakEditSandwich extends DenTravakAbstractElement {
                 }
             });
         }else{
-            fetch('/sandwiches/', {
+            fetch('/den-travak/sandwiches/', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8"
