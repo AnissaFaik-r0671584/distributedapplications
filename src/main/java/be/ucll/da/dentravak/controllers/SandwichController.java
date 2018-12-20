@@ -4,18 +4,17 @@ import be.ucll.da.dentravak.model.Sandwich;
 import be.ucll.da.dentravak.model.SandwichPreferences;
 import be.ucll.da.dentravak.repository.SandwichRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import javax.naming.ServiceUnavailableException;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
 @RestController
 public class SandwichController {
 
@@ -23,8 +22,8 @@ public class SandwichController {
     private SandwichRepository swRepo;
 
     //inject is het zelfde als autowired, maar autowired is specifiek voor spring
-    /*@Autowired
-    private DiscoveryClient discoveryClient;*/
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     @Autowired
     // RestTemplate laat toe op REST calls te maken naar andere sites.
@@ -78,19 +77,27 @@ public class SandwichController {
     @GetMapping("/getpreferences/{emailAddress}")
     public SandwichPreferences getPreferences(@PathVariable String emailAddress) throws RestClientException, ServiceUnavailableException {
         URI service = recommendationServiceUrl()
-                .map(s -> s.resolve("/recommend/" + emailAddress))
+                //.map(s -> s.resolve("/recommend/" + emailAddress))
+                .map(s -> s.resolve("/recommendation/recommend/" + emailAddress))
                 .orElseThrow(ServiceUnavailableException::new);
         return restTemplate
                 .getForEntity(service, SandwichPreferences.class)
                 .getBody();
     }
 
-    public Optional<URI> recommendationServiceUrl() {
+    /*public Optional<URI> recommendationServiceUrl() {
         try {
             return Optional.of(new URI("http://localhost:8081"));
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
+    }*/
+
+    public Optional<URI> recommendationServiceUrl() {
+        return discoveryClient.getInstances("recommendation")
+                .stream()
+                .map(si -> si.getUri())
+                .findFirst();
     }
 
 
