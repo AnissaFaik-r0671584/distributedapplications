@@ -2,19 +2,33 @@ import DenTravakAbstractElement from '../travak-abstract-element.js';
 
 class DenTravakSandwichesList extends DenTravakAbstractElement {
 
+    constructor() {
+        super('travak-admin-app')
+    }
+
     connectedCallback() {
         super.connectedCallback();
+        this.refreshSandwiches();
+        this.initEventListeners();
+    }
+
+    refreshSandwiches() {
         fetch('http://localhost:8080/sandwiches')
             .then(resp => resp.json())
             .then(json => this.updateSandwichesList(json));
     }
 
+    initEventListeners() {
+        this.byId('new-sandwich-btn').addEventListener('click', () => this.app().showEditSandwich())
+        this.byId('show-orders-btn').addEventListener('click', () => this.app().showOrderList())
+    }
+
     updateSandwichesList(sandwiches) {
         let sandwichesList = this.byId('sandwiches');
-        //sandwichesList.innerHTML = ``;
+        sandwichesList.innerHTML = ``;
         sandwiches.forEach(sandwich => {
             let sandwichEl = htmlToElement(this.getSandwichTemplate(sandwich));
-            sandwichEl.addEventListener('click', () => this.app().dispatchEvent(new CustomEvent('checkout', {detail: sandwich})));
+            sandwichEl.addEventListener('click', () => this.app().dispatchEvent(new CustomEvent('edit-sandwich', {detail: sandwich})));
             sandwichesList.appendChild(sandwichEl);
         });
     }
@@ -25,10 +39,21 @@ class DenTravakSandwichesList extends DenTravakAbstractElement {
                 div.dt-sandwich-info {
                     margin-left: auto;
                 }
+                .travak-header {
+                    display: flex;
+                }
+                .travak-header div.buttons {
+                    margin-left: auto;
+                }
             </style>
             <div class="animate">
-                <h3>Welkom bij den Travak</h3>
-                <h4>Kies je broodje</h4>
+                <div class="travak-header">
+                    <h4>Den Travak Broodjesbeheer</h4>
+                    <div class="buttons">
+                        <button id="show-orders-btn" type="button" class="btn btn-primary">Bestellingen</button>
+                        <button id="new-sandwich-btn" type="button" class="btn btn-primary">Nieuw broodje</button>
+                    </div>
+                </div>
                 <div>
                 <ul id="sandwiches" class="list-group">
                 </ul>

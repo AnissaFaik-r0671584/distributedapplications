@@ -58,26 +58,29 @@ public class Sandwich {
         return name + " " + price + " " + ingredients;
     }
 
-    private Sandwich(SandwichBuilder builder){
-        this.name = builder.name;
-        this.price = builder.price;
-        this.ingredients = builder.ingredients;
-
-    }
-
     public static class SandwichBuilder {
+        private UUID id;
         private String name;
         private BigDecimal price;
         private String ingredients;
 
-        public SandwichBuilder() {
+        private SandwichBuilder() {
         }
 
-        public SandwichBuilder buildName(String name){
+        public static SandwichBuilder aSandwich() {
+            return new SandwichBuilder();
+        }
+
+        public SandwichBuilder withId(UUID id) {
+            this.id = id;
+            return this;
+        }
+
+        public SandwichBuilder withName(String name){
             this.name = name;
             return this;
         }
-        public SandwichBuilder buildPrice(BigDecimal price){
+        public SandwichBuilder withPrice(BigDecimal price){
             this.price = price;
             return this;
         }
@@ -87,7 +90,12 @@ public class Sandwich {
         }
 
         public Sandwich build(){
-            return new Sandwich(this);
+            Sandwich sandwich = new Sandwich();
+            sandwich.id = id;
+            sandwich.price = price;
+            sandwich.name = name;
+            sandwich.ingredients = ingredients;
+            return sandwich;
         }
     }
 }

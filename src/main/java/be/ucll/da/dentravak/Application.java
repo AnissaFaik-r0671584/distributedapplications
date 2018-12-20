@@ -13,11 +13,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+
+import static be.ucll.da.dentravak.model.Sandwich.SandwichBuilder.aSandwich;
 
 @SpringBootApplication
 public class Application {
@@ -36,22 +39,28 @@ public class Application {
             registry.addMapping("/**");
         }
     }
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
     @Bean
     public CommandLineRunner demo(SandwichRepository repository, OrderRepository orderRepository){
         return (args) -> {
-            Sandwich s1 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal("77.40"))
-                    .buildName("Sandwich Anissa").buildIngredients("Ham, Kaas")
+            Sandwich s1 = aSandwich()
+                    .withPrice(new BigDecimal("77.40"))
+                    .withName("Sandwich Anissa").buildIngredients("Ham, Kaas")
                     .build();
 
-            Sandwich s2 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal("11.40"))
-                    .buildName("Sandwich Joran").buildIngredients("Broodje gezond")
+            Sandwich s2 = aSandwich()
+                    .withPrice(new BigDecimal("11.40"))
+                    .withName("Sandwich Joran").buildIngredients("Broodje gezond")
                     .build();
 
-            Sandwich s3 = new Sandwich.SandwichBuilder()
-                    .buildPrice(new BigDecimal("552.40"))
-                    .buildName("Sandwich Lector").buildIngredients("you get the point")
+            Sandwich s3 = aSandwich()
+                    .withPrice(new BigDecimal("552.40"))
+                    .withName("Sandwich Lector").buildIngredients("you get the point")
                     .build();
 
             repository.save(s1);
