@@ -13,7 +13,7 @@ class DenTravakSandwichesList extends DenTravakAbstractElement {
     }
 
     refreshSandwiches() {
-        fetch('http://localhost:8080/den-travak/sandwiches')
+        fetch('http://localhost:8080/den-travak/sandwiches/')
             .then(resp => resp.json())
             .then(json => this.updateSandwichesList(json));
     }
