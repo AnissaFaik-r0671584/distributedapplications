@@ -26,7 +26,7 @@ class DenTravakSandwichesCheckout extends DenTravakAbstractElement {
         order.mobilePhoneNumber = this.byId("mobile-phone-number").value;
         order.breadType = this.byCss("input[name='typeBrood']:checked").value;
         order.price = this.sandwich.price;
-        fetch('http://localhost:8080/orders', {
+        fetch('http://localhost:8080/den-travak/orders', {
             method: "POST",
             headers : {
                 "Content-Type": "application/json; charset=UTF-8"

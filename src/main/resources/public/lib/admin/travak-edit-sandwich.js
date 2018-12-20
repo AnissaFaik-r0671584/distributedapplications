@@ -25,7 +25,7 @@ class DenTravakEditSandwich extends DenTravakAbstractElement {
         sandwich.ingredients = this.byId('ingredients').value;
         if(this.sandwich.id != null) {
             sandwich.id = this.sandwich.id;
-            fetch(`http://localhost:8080/sandwiches/${this.sandwich.id}`, {
+            fetch(`http://localhost:8080/den-travak/sandwiches/${this.sandwich.id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8"

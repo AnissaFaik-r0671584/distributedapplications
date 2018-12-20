@@ -23,7 +23,7 @@ class DenTravakSandwichesOrderConfirmation extends DenTravakAbstractElement {
                     recommendation.ratedItem = this.order.sandwichId;
                     recommendation.rating = btn.dataset.score;
 
-                    fetch('http://localhost:8081/recommend', {
+                    fetch('http://localhost:8081/recommendation/recommend', {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json; charset=UTF-8"

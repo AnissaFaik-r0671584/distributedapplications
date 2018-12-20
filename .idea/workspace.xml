@@ -2,85 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e06b7f-a77b-4f9a-a54c-5572bfbace4f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ecwid_consul_consul_api_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_16_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_6_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_archaius_archaius_core_0_7_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_core_1_4_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_2_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_core_2_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_httpclient_2_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_loadbalancer_2_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_ribbon_ribbon_transport_2_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_core_0_10_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_internal_0_10_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_client_1_19_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_core_1_19_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_configuration_commons_configuration_1_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_29_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_3_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_0_4_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_contexts_0_4_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_servo_0_4_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_9_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_56.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_56.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_commons_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_consul_core_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_consul_discovery_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_context_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_archaius_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_core_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_ribbon_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_consul_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_consul_discovery_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/5.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/5.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dentravak_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/dentravak_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dentravak_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/dentravak_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application$WebConfig.class" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application$WebConfig.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application.class" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/Application.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/controllers/SandwichController.class" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/da/dentravak/controllers/SandwichController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.yml" afterPath="$PROJECT_DIR$/out/production/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-edit-sandwich.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-edit-sandwich.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-order-list.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-order-list.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-sandwiches-list.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-sandwiches-list.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-checkout.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-checkout.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-list.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-list.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js" afterPath="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -126,42 +53,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SandwichController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1250">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -599,7 +491,6 @@
         <option value="$PROJECT_DIR$/Frontend/lib/shop/travak-app.js" />
         <option value="$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-order-confirmation.js" />
         <option value="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-app.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/model/Sandwich.java" />
         <option value="$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
@@ -607,6 +498,12 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-checkout.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-list.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-edit-sandwich.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-order-list.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-sandwiches-list.js" />
       </list>
     </option>
   </component>
@@ -668,57 +565,7 @@
               <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="be" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="be" type="462c0819:PsiDirectoryNode" />
-              <item name="ucll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="be" type="462c0819:PsiDirectoryNode" />
-              <item name="ucll" type="462c0819:PsiDirectoryNode" />
-              <item name="da" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="be" type="462c0819:PsiDirectoryNode" />
-              <item name="ucll" type="462c0819:PsiDirectoryNode" />
-              <item name="da" type="462c0819:PsiDirectoryNode" />
-              <item name="dentravak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="distributedapps" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="be" type="462c0819:PsiDirectoryNode" />
-              <item name="ucll" type="462c0819:PsiDirectoryNode" />
-              <item name="da" type="462c0819:PsiDirectoryNode" />
-              <item name="dentravak" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dentravak" type="b2602c69:ProjectViewProjectNode" />
@@ -726,6 +573,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -952,7 +800,7 @@
       <workItem from="1544605887497" duration="12184000" />
       <workItem from="1544713675357" duration="9653000" />
       <workItem from="1545089076541" duration="1616000" />
-      <workItem from="1545296270778" duration="6984000" />
+      <workItem from="1545296270778" duration="8402000" />
     </task>
     <servers />
   </component>
@@ -965,7 +813,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69905000" />
+    <option name="totallyTimeSpent" value="71323000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -996,11 +844,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.75268817" sideWeight="0.49783784" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75268817" sideWeight="0.49783784" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39459458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39459458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1070,41 +918,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/model/Sandwich.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="70" column="35" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="108" column="2" lean-forward="false" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/repository/SandwichRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1275,29 +1088,6 @@
     <entry file="file://$PROJECT_DIR$/Frontend/lib/shop/travak-app.js" />
     <entry file="file://$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-checkout.js" />
     <entry file="file://$PROJECT_DIR$/Frontend/lib/shop/travak-sandwiches-order-confirmation.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="68" />
-          <folding>
-            <marker date="1544793395847" expanded="true" signature="1826:2217" ph="..." />
-            <marker date="1544793395847" expanded="true" signature="1856:1926" ph="{...}" />
-            <marker date="1544793395847" expanded="true" signature="1954:2008" ph="{...}" />
-            <marker date="1544793395847" expanded="true" signature="2043:2101" ph="{...}" />
-            <marker date="1544793395847" expanded="true" signature="2139:2197" ph="{...}" />
-            <marker date="1544793395847" expanded="true" signature="2251:3318" ph="..." />
-            <marker date="1544793395847" expanded="true" signature="2291:2482" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/be/ucll/da/dentravak/controllers/SandwichControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
@@ -1327,37 +1117,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-checkout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="149" column="8" lean-forward="false" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#69#0" expanded="false" />
-            <marker date="1544623966833" expanded="true" signature="1699:1761" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1378,23 +1141,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/controllers/SandwichController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1250">
           <caret line="26" column="0" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/da/dentravak/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <marker date="1544623966833" expanded="true" signature="1699:1761" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-checkout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <marker date="1545312773051" expanded="true" signature="1616:1997" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="1646:1706" ph="{...}" />
+            <marker date="1545312773051" expanded="true" signature="1734:1788" ph="{...}" />
+            <marker date="1545312773051" expanded="true" signature="1823:1881" ph="{...}" />
+            <marker date="1545312773051" expanded="true" signature="1919:1977" ph="{...}" />
+            <marker date="1545312773051" expanded="true" signature="2031:3959" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2071:2243" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2315:2399" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2440:3585" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2565:2882" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2780:2855" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="2927:3208" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="3115:3181" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="3253:3562" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="3462:3535" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="3626:3847" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="4070:4607" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="4145:4218" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="4267:4446" ph="..." />
+            <marker date="1545312773051" expanded="true" signature="4493:4590" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <marker date="1545312806115" expanded="true" signature="878:995" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="917:975" ph="{...}" />
+            <marker date="1545312806115" expanded="true" signature="1029:1259" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1139:1240" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1195:1217" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1370:1907" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1445:1518" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1567:1746" ph="..." />
+            <marker date="1545312806115" expanded="true" signature="1793:1890" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/shop/travak-sandwiches-order-confirmation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-775">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1545312806162" expanded="true" signature="1841:2232" ph="..." />
+            <marker date="1545312806162" expanded="true" signature="1871:1941" ph="{...}" />
+            <marker date="1545312806162" expanded="true" signature="1969:2023" ph="{...}" />
+            <marker date="1545312806162" expanded="true" signature="2058:2116" ph="{...}" />
+            <marker date="1545312806162" expanded="true" signature="2154:2212" ph="{...}" />
+            <marker date="1545312806162" expanded="true" signature="2266:3333" ph="..." />
+            <marker date="1545312806162" expanded="true" signature="2306:2497" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/common/travak-input-text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <marker date="1543617736278" expanded="true" signature="606:864" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+            <marker date="1544114457539" expanded="true" signature="1670:1773" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-edit-sandwich.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-order-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <marker date="1545312955970" expanded="true" signature="920:1583" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="956:1014" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1051:1102" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1145:1250" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1285:1380" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1412:1466" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1505:1563" ph="{...}" />
+            <marker date="1545312955970" expanded="true" signature="1617:1996" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="1661:1858" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="1880:1977" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="1932:1954" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="2101:2753" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="2176:2246" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="2295:2598" ph="..." />
+            <marker date="1545312955970" expanded="true" signature="2642:2736" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/lib/admin/travak-sandwiches-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <marker date="1545312966556" expanded="true" signature="1276:1581" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="1315:1373" ph="{...}" />
+            <marker date="1545312966556" expanded="true" signature="1405:1459" ph="{...}" />
+            <marker date="1545312966556" expanded="true" signature="1503:1561" ph="{...}" />
+            <marker date="1545312966556" expanded="true" signature="1615:2176" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="1659:2034" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="1756:2011" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2056:2157" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2112:2134" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2287:2824" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2362:2435" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2484:2663" ph="..." />
+            <marker date="1545312966556" expanded="true" signature="2710:2807" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
