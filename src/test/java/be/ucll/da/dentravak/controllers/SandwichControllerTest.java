@@ -17,23 +17,17 @@ public class SandwichControllerTest {
     public void sortingBasedOnPreferences_Works() {
         SandwichController sandwichController = new SandwichController();
 
-        UUID sandwichId1 = UUID.randomUUID();
-        UUID sandwichId2 = UUID.randomUUID();
-        UUID sandwichId3 = UUID.randomUUID();
+        Sandwich sandwich1 = aSandwich().withId(UUID.randomUUID()).withName("sandwich 1").build();
+        Sandwich sandwich2 = aSandwich().withId(UUID.randomUUID()).withName("sandwich 2").build();
+        Sandwich sandwich3 = aSandwich().withId(UUID.randomUUID()).withName("sandwich 3").build();
 
         SandwichPreferences preferences = new SandwichPreferences();
-        preferences.put(sandwichId1, 1.0f);
-        preferences.put(sandwichId2, 5.0f);
-        preferences.put(sandwichId3, 3.0f);
-
-        Sandwich sandwich1 = aSandwich().withId(sandwichId1).withName("sandwich 1").build();
-        Sandwich sandwich2 = aSandwich().withId(sandwichId2).withName("sandwich 2").build();
-        Sandwich sandwich3 = aSandwich().withId(sandwichId3).withName("sandwich 3").build();
+        preferences.put(sandwich1.getId(), 1.0f);
+        preferences.put(sandwich2.getId(), 5.0f);
+        preferences.put(sandwich3.getId(), 3.0f);
 
         List<Sandwich> sandwiches = Arrays.asList(sandwich1, sandwich2, sandwich3);
-
         sandwichController.getSandwichSortedByRecommendations(preferences, sandwiches);
-
         assertThat(sandwiches)
                 .containsExactly(sandwich2, sandwich3, sandwich1);
     }

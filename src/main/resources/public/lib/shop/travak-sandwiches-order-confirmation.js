@@ -16,7 +16,6 @@ class DenTravakSandwichesOrderConfirmation extends DenTravakAbstractElement {
         this.shadowRoot.querySelectorAll('button.rating-buttons')
             .forEach(btn => {
                 btn.addEventListener('click', event => {
-                    //todo: use fetch to post to recommendation controller
                     console.log('selected rating', btn.dataset.score);
                     let recommendation = {};
                     recommendation.emailAddress = this.order.mobilePhoneNumber;

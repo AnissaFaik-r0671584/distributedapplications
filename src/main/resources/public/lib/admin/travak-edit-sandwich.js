@@ -18,7 +18,6 @@ class DenTravakEditSandwich extends DenTravakAbstractElement {
     }
 
     saveSandwich() {
-        //todo: call backend via fetch api
         let sandwich = {};
         sandwich.name = this.byId('name').value;
         sandwich.price = this.byId('price').value;

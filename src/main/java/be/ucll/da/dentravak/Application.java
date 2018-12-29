@@ -21,6 +21,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import static be.ucll.da.dentravak.model.Order.OrderBuilder.aOrder;
 import static be.ucll.da.dentravak.model.Sandwich.SandwichBuilder.aSandwich;
 
 @EnableDiscoveryClient
@@ -60,46 +61,30 @@ public class Application {
                     .withName("Sandwich Joran").buildIngredients("Broodje gezond")
                     .build();
 
-            Sandwich s3 = aSandwich()
-                    .withPrice(new BigDecimal("552.40"))
-                    .withName("Sandwich Lector").buildIngredients("you get the point")
-                    .build();
-
             repository.save(s1);
             repository.save(s2);
-            repository.save(s3);
 
-            Order o = new Order.OrderBuilder()
-                    .buildGSM("0480000000")
-                    .buildDate(LocalDateTime.of(2018, 3, 3, 3, 3, 3))
-                    .buildBrood(Brood.WRAP)
-                    .buildSandwichID(s1.getId())
-                    .buildPrice(new BigDecimal(2.00))
-                    .buildName("testnaam")
+            Order o = aOrder()
+                    .withMobilePhoneNumber("0480000000")
+                    .withCreationDate(LocalDateTime.of(2018, 3, 3, 3, 3, 3))
+                    .withBreadType(Brood.WRAP)
+                    .withSandwichId(s1.getId())
+                    .withPrice(new BigDecimal(2.00))
+                    .withName("testnaam")
                     .build();
 
-            Order o2 = new Order.OrderBuilder()
-                    .buildGSM("0480000044")
-                    .buildDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
-                    .buildBrood(Brood.WRAP)
-                    .buildSandwichID(s2.getId())
-                    .buildPrice(new BigDecimal(2.00))
-                    .buildName("testnaam")
+            Order o2 = aOrder()
+                    .withMobilePhoneNumber("0480000044")
+                    .withCreationDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
+                    .withBreadType(Brood.WRAP)
+                    .withSandwichId(s2.getId())
+                    .withPrice(new BigDecimal(2.00))
+                    .withName("testnaam")
                     .build();
 
-            Order o3 = new Order.OrderBuilder()
-                    .buildGSM("0480004994")
-                    .buildDate(LocalDateTime.of(2018, 4, 4, 3, 3, 3))
-                    .buildBrood(Brood.TURKISH_BREAD)
-                    .buildSandwichID(s1.getId())
-                    .buildPrice(new BigDecimal(2.00))
-                    .buildName("testnaam")
-                    .build();
 
             orderRepository.save(o);
             orderRepository.save(o2);
-            orderRepository.save(o3);
-
         };
     }
 }

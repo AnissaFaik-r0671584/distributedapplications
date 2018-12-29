@@ -53,11 +53,6 @@ public class Sandwich {
         this.id = id;
     }
 
-    @Override
-    public String toString(){
-        return name + " " + price + " " + ingredients;
-    }
-
     public static class SandwichBuilder {
         private UUID id;
         private String name;

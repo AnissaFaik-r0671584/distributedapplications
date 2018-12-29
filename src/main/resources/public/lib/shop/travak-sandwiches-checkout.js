@@ -19,7 +19,6 @@ class DenTravakSandwichesCheckout extends DenTravakAbstractElement {
     }
 
     orderSandwich() {
-        //todo: call backend via fetch api
         let order = {};
         order.name = this.byId("mobile-phone-number").value + " - order";
         order.sandwichId = this.sandwich.id;

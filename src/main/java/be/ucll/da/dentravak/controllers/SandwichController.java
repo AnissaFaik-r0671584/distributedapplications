@@ -21,18 +21,15 @@ public class SandwichController {
     @Autowired
     private SandwichRepository swRepo;
 
-    //inject is het zelfde als autowired, maar autowired is specifiek voor spring
     @Autowired
     private DiscoveryClient discoveryClient;
 
     @Autowired
-    // RestTemplate laat toe op REST calls te maken naar andere sites.
     private RestTemplate restTemplate;
 
     @RequestMapping(value="/sandwiches", method = RequestMethod.GET)
     public Iterable<Sandwich> sandwich() {
         try {
-            //TODO: sort allSandwiches by float in preferences
            SandwichPreferences preferences = getPreferences("1234567");
            Iterable<Sandwich> sandwiches = swRepo.findAll();
            List<Sandwich> sandwichesSorted = getSandwichSortedByRecommendations(preferences, (List<Sandwich>) sandwiches);
@@ -43,8 +40,6 @@ public class SandwichController {
     }
 
     List<Sandwich> getSandwichSortedByRecommendations(SandwichPreferences preferences, List<Sandwich> sandwiches) {
-        //SandwichPreferences preferences = getPreferences("1234567");
-        //List<Sandwich> sandwiches = (List<Sandwich>) swRepo.findAll();
         Collections.sort(sandwiches,(Sandwich s1, Sandwich s2) -> rating(preferences, s2).compareTo(rating(preferences, s1)) );
         return sandwiches;
     }
@@ -77,21 +72,12 @@ public class SandwichController {
     @GetMapping("/getpreferences/{emailAddress}")
     public SandwichPreferences getPreferences(@PathVariable String emailAddress) throws RestClientException, ServiceUnavailableException {
         URI service = recommendationServiceUrl()
-                //.map(s -> s.resolve("/recommend/" + emailAddress))
                 .map(s -> s.resolve("/recommendation/recommend/" + emailAddress))
                 .orElseThrow(ServiceUnavailableException::new);
         return restTemplate
                 .getForEntity(service, SandwichPreferences.class)
                 .getBody();
     }
-
-    /*public Optional<URI> recommendationServiceUrl() {
-        try {
-            return Optional.of(new URI("http://localhost:8081"));
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
-    }*/
 
     public Optional<URI> recommendationServiceUrl() {
         return discoveryClient.getInstances("recommendation")
