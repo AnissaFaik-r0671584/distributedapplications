@@ -43,7 +43,7 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.PUT)
-    public Order updatePrinted (@RequestParam(value = "printed") UUID id){
+    public Order updatePrinted (@RequestParam(value = "printed", required = true) UUID id){
         Order order = orderRepository.findById(id).get();
         order.setPrinted(true);
         return orderRepository.save(order);
