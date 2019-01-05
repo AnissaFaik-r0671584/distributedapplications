@@ -48,7 +48,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         this.updateOrdersPrint();
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
-            .then(function(json)
+            .then(json =>
         {
             this.updateOrderList(json);
             let items = [];
