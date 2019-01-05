@@ -55,9 +55,9 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then(json =>
         {
             let items = [];
-            items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date" ]);
+            items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date", "Printed"]);
             json.forEach(j => {
-                items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate]);
+                items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate, j.printed]);
             });
             console.log(items);
             let csv = "";
