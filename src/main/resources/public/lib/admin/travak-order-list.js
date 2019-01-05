@@ -28,7 +28,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         });
     }
 
-    toCSV(){
+    updateOrdersPrint(){
         fetch('/den-travak/orders/')
             .then((resp) => resp.json())
             .then(function(data) {
@@ -42,11 +42,17 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                     });
                 });
             });
+    }
+
+    toCSV(){
+        this.updateOrdersPrint();
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
             .then(function(json)
         {
+            this.updateOrderList(json);
             let items = [];
+            items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date" ]);
             json.forEach(j => {
                 items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate]);
             });
@@ -58,7 +64,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             })
 
             var link = document.createElement('a');
-            link.setAttribute("type", "hidden");
+            link.setAttribute('type', 'hidden');
             link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
             link.setAttribute('download','printorders.csv' );
             document.body.appendChild(link);
