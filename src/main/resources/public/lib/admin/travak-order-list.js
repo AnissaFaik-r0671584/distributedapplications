@@ -33,7 +33,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         fetch('/den-travak/orders/')
             .then((resp) => resp.json())
             .then(function(data) {
-                let orders = data.result();
+                let orders = data.results;
                 orders.forEach(order =>{
                     fetch(`/den-travak/orders?printed=${order.id}/`, {
                         method: "PUT",
@@ -43,7 +43,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                     });
                 })
             });
-        
+
     }
 
     get template() {
