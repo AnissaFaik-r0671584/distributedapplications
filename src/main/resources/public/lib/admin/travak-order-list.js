@@ -46,7 +46,6 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then(resp => resp.json())
             .then(function(json)
         {
-            this.updateOrderList(json);
             let items = [];
             json.forEach(j => {
                 items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate]);
@@ -63,6 +62,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             link.target = '_blank';
             link.download = 'printorders.csv';
             link.click();
+            this.updateOrderList(json);
         });
 
 
