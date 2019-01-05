@@ -42,11 +42,10 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         }
                     });
                 });
-                fetch('/den-travak/orders/')
-                    .then(resp => resp.json())
-                    .then(json => this.app().updateOrderList(json));
                 });
-
+        fetch('/den-travak/orders/')
+            .then(resp => resp.json())
+            .then(json => this.updateOrderList(json));
     }
 
     get template() {
