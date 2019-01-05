@@ -51,16 +51,15 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate]);
             });
             console.log(items);
-            let csv;
+            let csv = "";
             items.forEach(d => {
                 let row = d.join(",");
                 csv += row + "\r\n";
             })
 
             var link = document.createElement('a');
-            link.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
-            link.target = '_blank';
-            link.download = 'printorders.csv';
+            link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
+            link.setAttribute('download','printorders.csv' );
             link.click();
         });
 
