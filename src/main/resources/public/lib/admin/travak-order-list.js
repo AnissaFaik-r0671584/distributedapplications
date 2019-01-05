@@ -41,7 +41,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         }
                     });
                 });
-                });
+            });
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
             .then(function(json)
@@ -62,7 +62,6 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             link.target = '_blank';
             link.download = 'printorders.csv';
             link.click();
-            this.updateOrderList(json);
         });
 
 
