@@ -42,7 +42,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         headers: {
                             "Content-Type": "application/json; charset=UTF-8"
                         }
-                    });
+                    }).then((resp) => resp.json()).then(data => { console.log(data)});
                 });
             });
     }
