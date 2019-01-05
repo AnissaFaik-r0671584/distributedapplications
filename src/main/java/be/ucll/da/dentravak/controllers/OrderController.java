@@ -20,6 +20,7 @@ public class OrderController {
     @RequestMapping(value = "/orders", method = RequestMethod.POST)
     public Order addOrder (@RequestBody Order order){
         order.setCreationDate(LocalDateTime.now());
+        order.setPrinted(false);
         return orderRepository.save(order);
     }
 
