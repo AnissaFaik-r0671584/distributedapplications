@@ -55,6 +55,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             <div class="animate">
                 <div class="travak-header">
                     <h4>Den Travak Bestellingen</h4>
+                    <button id="download-orders-btn" type="button" class="btn btn-primary">Download orders</button>
                     <button id="edit-sandwiches-btn" type="button" class="btn btn-primary">Bewerk broodjeslijst</button>
                 </div>
                 <div>
