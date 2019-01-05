@@ -45,7 +45,18 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 });
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
-            .then(json => this.updateOrderList(json));
+            .then(function(json)
+        {
+            this.updateOrderList(json);
+            const replacer = function(key, value) { return value === null ? '' : value }
+            const header = ["name", "breadType", "creationDate", "price", "mobilePhoneNumber"]
+            let csv = json.map(row => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))
+            csv.unshift(header.join(','))
+            csv = csv.join('\r\n')
+            console.log(csv);
+        });
+
+
     }
 
     get template() {
