@@ -35,7 +35,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then(function(data) {
                 let orders = data;
                 orders.forEach(order => {
-                    fetch(`/den-travak/orders?printed=${order.id}/`, {
+                    fetch(`/den-travak/orders?printed=${order.id}`, {
                         method: "PUT",
                         headers: {
                             "Content-Type": "application/json; charset=UTF-8"
