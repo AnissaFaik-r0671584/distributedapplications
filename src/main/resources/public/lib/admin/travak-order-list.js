@@ -33,8 +33,8 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         fetch('/den-travak/orders/')
             .then((resp) => resp.json())
             .then(function(data) {
-                let orders = data.results;
-                orders.forEach(order =>{
+                let orders = data;
+                orders.forEach(order => {
                     fetch(`/den-travak/orders?printed=${order.id}/`, {
                         method: "PUT",
                         headers: {
