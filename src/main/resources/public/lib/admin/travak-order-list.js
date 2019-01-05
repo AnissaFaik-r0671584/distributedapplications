@@ -23,6 +23,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         orderList.innerHTML = ``;
         orders.forEach(order => {
             let orderEl = htmlToElement(this.getOrderTemplate(order));
+            console.log(order.printed);
             orderList.appendChild(orderEl);
         });
     }
