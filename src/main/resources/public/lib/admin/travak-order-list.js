@@ -58,8 +58,10 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             })
 
             var link = document.createElement('a');
+            link.setAttribute("type", "hidden");
             link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
             link.setAttribute('download','printorders.csv' );
+            document.body.appendChild(link);
             link.click();
         });
 
