@@ -54,7 +54,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             let csv;
             items.forEach(d => {
                 let row = d.join(",");
-                cvs += row + "\r\n";
+                csv += row + "\r\n";
             })
 
             var link = document.createElement('a');
