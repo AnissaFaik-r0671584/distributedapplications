@@ -24,7 +24,6 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         orderList.innerHTML = ``;
         orders.forEach(order => {
             let orderEl = htmlToElement(this.getOrderTemplate(order));
-            console.log(order.printed);
             orderList.appendChild(orderEl);
         });
     }
@@ -48,12 +47,22 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then(function(json)
         {
             this.updateOrderList(json);
-            const replacer = function(key, value) { return value === null ? '' : value }
-            const header = ["name", "breadType", "creationDate", "price", "mobilePhoneNumber"]
-            let csv = json.map(row => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))
-            csv.unshift(header.join(','))
-            csv = csv.join('\r\n')
-            console.log(csv);
+            let items = [];
+            json.forEach(j => {
+                items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate]);
+            });
+            console.log(items);
+            let csv;
+            items.forEach(d => {
+                let row = d.join(",");
+                cvs += row + "\r\n";
+            })
+
+            var link = document.createElement('a');
+            link.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+            link.target = '_blank';
+            link.download = 'printorders.csv';
+            link.click();
         });
 
 
