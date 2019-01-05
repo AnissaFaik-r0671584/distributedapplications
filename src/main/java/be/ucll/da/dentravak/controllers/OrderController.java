@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 public class OrderController {
@@ -38,7 +39,12 @@ public class OrderController {
             }
         }
         return orders;
-
     }
 
+    @RequestMapping(value = "/orders", method = RequestMethod.PUT)
+    public Order updatePrinted (@RequestParam(value = "printed") UUID id){
+        Order order = orderRepository.findById(id).get();
+        order.setPrinted(true);
+        return orderRepository.save(order);
+    }
 }

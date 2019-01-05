@@ -18,9 +18,18 @@ public class Order {
     private Brood breadType;
     private BigDecimal price;
     private LocalDateTime creationDate;
+    private boolean printed;
 
     public Order(){
 
+    }
+
+    public boolean isPrinted() {
+        return printed;
+    }
+
+    public void setPrinted(boolean printed) {
+        this.printed = printed;
     }
 
     public String getName() {
@@ -87,6 +96,7 @@ public class Order {
         private Brood breadType;
         private BigDecimal price;
         private LocalDateTime creationDate;
+        private boolean printed;
 
         public OrderBuilder() {
         }
@@ -130,6 +140,11 @@ public class Order {
             return this;
         }
 
+        public OrderBuilder withPrinted(boolean printed){
+            this.printed = printed;
+            return this;
+        }
+
         public Order build(){
             Order order = new Order();
             order.id = id;
@@ -139,6 +154,7 @@ public class Order {
             order.breadType = breadType;
             order.price = price;
             order.creationDate = creationDate;
+            order.printed = printed;
             return order;
         }
     }

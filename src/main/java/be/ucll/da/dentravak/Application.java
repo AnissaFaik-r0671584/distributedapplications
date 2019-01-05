@@ -71,6 +71,7 @@ public class Application {
                     .withSandwichId(s1.getId())
                     .withPrice(new BigDecimal(2.00))
                     .withName("testnaam")
+                    .withPrinted(false)
                     .build();
 
             Order o2 = aOrder()
@@ -80,6 +81,7 @@ public class Application {
                     .withSandwichId(s2.getId())
                     .withPrice(new BigDecimal(2.00))
                     .withName("testnaam")
+                    .withPrinted(false)
                     .build();
 
 
