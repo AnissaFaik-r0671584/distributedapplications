@@ -48,6 +48,10 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 });
                 this.toCSV();
                 this.refreshOrderlist();
+                this.refreshOrderlist();
+                this.refreshOrderlist();
+                this.refreshOrderlist();
+
             });
     }
 
