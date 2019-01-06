@@ -48,6 +48,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 });
             });
         this.toCSV();
+        this.refreshOrderlist();
     }
 
     toCSV(){
@@ -55,8 +56,6 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then(resp => resp.json())
             .then(json =>
             {
-                this.updateOrderList(json);
-
                 let items = [];
                 items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date"]);
                 json.forEach(j => {
