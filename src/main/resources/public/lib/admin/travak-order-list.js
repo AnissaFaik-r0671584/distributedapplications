@@ -46,8 +46,8 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         body: JSON.stringify(order)
                     });
                 });
-            });
-        this.toCSV();
+            }).then(resp => this.toCSV());
+        //this.toCSV();
     }
 
     toCSV(){
