@@ -44,15 +44,10 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                             "Content-Type": "application/json; charset=UTF-8"
                         },
                         body: JSON.stringify(order)
-                    }).then((resp) => {
-                        if (resp.ok) {
-                            this.toCSV();
-                        } else {
-                            alert('An error occurred')
-                        }
                     });
                 });
             });
+        this.toCSV();
     }
 
     toCSV(){
