@@ -18,10 +18,6 @@ class DenTravakOrderList extends DenTravakAbstractElement {
     }
 
     toCSV(){
-        this.updateOrdersPrint();
-        fetch('/den-travak/orders/')
-            .then(resp => resp.json())
-            .then(json => {this.updateOrderList(json); console.log(json)});
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
             .then(json =>
@@ -44,6 +40,12 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 link.setAttribute('download','printorders.csv' );
                 document.body.appendChild(link);
                 link.click();
+
+                this.updateOrdersPrint();
+
+                fetch('/den-travak/orders/')
+                    .then(resp => resp.json())
+                    .then(json => {this.updateOrderList(json); console.log(json)});
             });
     }
 
