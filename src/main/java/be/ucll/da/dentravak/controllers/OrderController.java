@@ -45,9 +45,8 @@ public class OrderController {
     @RequestMapping(value = "/orders/{id}", method = RequestMethod.PUT)
     public Order updatePrinted (@RequestBody Order order, @PathVariable UUID id){
         if(orderRepository.findById(id).get() != null){
-        return orderRepository.save(order);
-        }
-        else{
+            return orderRepository.save(order);
+        } else {
             return null;
         }
     }
