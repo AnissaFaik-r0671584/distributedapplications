@@ -18,6 +18,11 @@ class DenTravakOrderList extends DenTravakAbstractElement {
     }
 
     toCSV(){
+
+        fetch('/den-travak/orders/')
+            .then(resp => resp.json())
+            .then(json => this.updateOrderList(json));
+        
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
             .then(json =>
@@ -65,15 +70,16 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             .then((resp) => resp.json())
             .then(data => {
                 data.forEach(order => {
-                    fetch(`/den-travak/orders?printed=${order.id}`, {
+                    order.printed = true;
+                    fetch(`/den-travak/orders/${order.id}`, {
                         method: "PUT",
                         headers: {
                             "Content-Type": "application/json; charset=UTF-8"
-                        }
+                        },
+                        body: JSON.stringify(order)
                     }).then((resp) => {
                         if (resp.ok) {
                             this.toCSV();
-                            this.app().dispatchEvent(new CustomEvent('travak-order-list'));
                         } else {
                             alert('An error occurred')
                         }
