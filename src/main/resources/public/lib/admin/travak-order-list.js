@@ -25,8 +25,10 @@ class DenTravakOrderList extends DenTravakAbstractElement {
 
     updateOrderList(orders) {
         let orderList = this.byId('orders');
+        console.log(orders + "update orders");
         orderList.innerHTML = ``;
         orders.forEach(order => {
+            console.log(order + "update order");
             let orderEl = htmlToElement(this.getOrderTemplate(order));
             orderList.appendChild(orderEl);
         });
@@ -46,8 +48,9 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         body: JSON.stringify(order)
                     });
                 });
-            }).then(resp => this.toCSV());
-        //this.toCSV();
+            });
+        console.log("to csv");
+        this.toCSV();
     }
 
     toCSV(){
@@ -75,6 +78,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 link.click();
                 link.remove();
                 this.updateOrderList(json);
+                console.log(json + "to update");
             });
     }
 
