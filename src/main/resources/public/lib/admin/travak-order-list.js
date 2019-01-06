@@ -19,7 +19,9 @@ class DenTravakOrderList extends DenTravakAbstractElement {
 
     toCSV(){
         this.updateOrdersPrint();
-        this.refreshOrderlist();
+        fetch('/den-travak/orders/')
+            .then(resp => resp.json())
+            .then(json => {this.updateOrderList(json); console.log(json)});
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
             .then(json =>
