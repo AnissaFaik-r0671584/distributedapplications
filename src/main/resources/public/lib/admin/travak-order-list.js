@@ -17,6 +17,34 @@ class DenTravakOrderList extends DenTravakAbstractElement {
         this.byId('download-orders-btn').addEventListener('click', (e) => this.toCSV());
     }
 
+    toCSV(){
+        this.updateOrdersPrint();
+        this.refreshOrderlist();
+        fetch('/den-travak/orders/')
+            .then(resp => resp.json())
+            .then(json =>
+            {
+                let items = [];
+                items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date", "Printed"]);
+                json.forEach(j => {
+                    items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate, j.printed]);
+                });
+                console.log(items);
+                let csv = "";
+                items.forEach(d => {
+                    let row = d.join(",");
+                    csv += row + "\r\n";
+                })
+
+                var link = document.createElement('a');
+                link.setAttribute('type', 'hidden');
+                link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
+                link.setAttribute('download','printorders.csv' );
+                document.body.appendChild(link);
+                link.click();
+            });
+    }
+
     refreshOrderlist(){
         fetch('/den-travak/orders/')
             .then(resp => resp.json())
@@ -47,33 +75,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
             });
     }
 
-    toCSV(){
-        this.updateOrdersPrint();
-        fetch('/den-travak/orders/')
-            .then(resp => resp.json())
-            .then(json =>
-        {
-            let items = [];
-            items.push(["ID", "Phone number", "Breadtype", "Price", "Order Date", "Printed"]);
-            json.forEach(j => {
-                items.push([j.id, j.mobilePhoneNumber, j.breadType, j.price, j.creationDate, j.printed]);
-            });
-            console.log(items);
-            let csv = "";
-            items.forEach(d => {
-                let row = d.join(",");
-                csv += row + "\r\n";
-            })
 
-            var link = document.createElement('a');
-            link.setAttribute('type', 'hidden');
-            link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
-            link.setAttribute('download','printorders.csv' );
-            document.body.appendChild(link);
-            link.click();
-        });
-        this.refreshOrderlist();
-    }
 
     get template() {
         return `
