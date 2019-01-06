@@ -65,7 +65,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 items.forEach(d => {
                     let row = d.join(",");
                     csv += row + "\r\n";
-                })
+                });
                 let link = document.createElement('a');
                 link.setAttribute('type', 'hidden');
                 link.setAttribute('href','data:text/csv;charset=utf-8,' + encodeURI(csv) );
@@ -74,6 +74,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 link.click();
                 link.remove();
             });
+        this.refreshOrderlist();
     }
 
     get template() {
