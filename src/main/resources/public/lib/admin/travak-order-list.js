@@ -70,14 +70,17 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                         headers: {
                             "Content-Type": "application/json; charset=UTF-8"
                         }
-                    }).then((resp) => resp.json()).then(data => { console.log(data)});
+                    }).then((resp) => {
+                        if (response.ok) {
+                            this.toCSV();
+                            this.app().dispatchEvent(new CustomEvent('travak-order-list'));
+                        } else {
+                            alert('An error occurred')
+                        }
+                    });
                 });
             });
-        fetch('/den-travak/orders/')
-            .then(resp => resp.json())
-            .then(json => {this.updateOrderList(json); console.log(json)});
 
-        this.toCSV();
     }
 
 
