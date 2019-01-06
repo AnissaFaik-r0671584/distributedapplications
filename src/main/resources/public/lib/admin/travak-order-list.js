@@ -14,7 +14,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
 
     initEventListeners() {
         this.byId('edit-sandwiches-btn').addEventListener('click', (e) => this.app().showSandwichList());
-        this.byId('download-orders-btn').addEventListener('click', (e) => this.toCSV());
+        this.byId('download-orders-btn').addEventListener('click', (e) => this.updateOrdersPrint());
     }
 
     toCSV(){
@@ -41,11 +41,7 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                 document.body.appendChild(link);
                 link.click();
 
-                this.updateOrdersPrint();
 
-                fetch('/den-travak/orders/')
-                    .then(resp => resp.json())
-                    .then(json => {this.updateOrderList(json); console.log(json)});
             });
     }
 
@@ -77,6 +73,11 @@ class DenTravakOrderList extends DenTravakAbstractElement {
                     }).then((resp) => resp.json()).then(data => { console.log(data)});
                 });
             });
+        fetch('/den-travak/orders/')
+            .then(resp => resp.json())
+            .then(json => {this.updateOrderList(json); console.log(json)});
+
+        this.toCSV();
     }
 
 
